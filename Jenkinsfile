@@ -17,6 +17,7 @@ pipeline {
     // Build
     stage('Clone') {
       steps {
+	    sh "rm -rf iperf"
         sh "git clone https://github.com/preetambor/iperf.git"
         }
     }
